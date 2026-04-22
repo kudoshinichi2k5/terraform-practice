@@ -16,4 +16,14 @@ variable "ami_id"        {
 
 variable "key_name"      { 
     type = string 
-} 
+}
+
+variable "project_name" {
+  description = "Tên dự án để gắn tag."
+  type        = string
+}
+
+variable "owner" {
+  description = "Tên chủ sở hữu để gắn tag."
+  type        = string
+}

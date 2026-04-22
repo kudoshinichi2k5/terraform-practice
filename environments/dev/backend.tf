@@ -9,11 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket = var.s3_bucket
-    key    = var.s3_key
-    region = var.aws_region
+    bucket = "nt542-kienle"
+    key    = "dev/terraform.tfstate" # Đường dẫn lưu file state trong bucket
+    region = "us-east-1"
 
     # Khuyến nghị sau này: Thêm DynamoDB để khóa state (State Locking) khi làm việc nhóm
-    # dynamodb_table = var.dynamodb_table
+    # dynamodb_table = "terraform-state-lock" 
   }
 }

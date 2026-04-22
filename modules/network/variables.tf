@@ -12,3 +12,13 @@ variable "environment" {
   description = "Tên môi trường (dev/prod)"
   type        = string
 }
+
+variable "project_name" {
+  description = "Tên dự án để gắn tag."
+  type        = string
+}
+
+variable "owner" {
+  description = "Tên chủ sở hữu để gắn tag."
+  type        = string
+}
