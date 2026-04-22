@@ -1,5 +1,5 @@
 resource "aws_security_group" "main" {
-  name        = "sg-${var.environment}"
+  name        = "security-${var.environment}"
   description = "Allow SSH, HTTP, ICMP inbound traffic"
   vpc_id      = var.vpc_id
 
