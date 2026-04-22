@@ -1,1 +1,9 @@
-output "sg_id" { value = aws_security_group.lab2_sg.id }
+output "sg_id" {
+  description = "ID của Security Group"
+  value       = aws_security_group.main.id
+}
+
+output "sg_name" {
+  description = "Tên của Security Group"
+  value       = aws_security_group.main.name
+}

@@ -1,7 +1,7 @@
-resource "aws_security_group" "sg" {
+resource "aws_security_group" "main" {
   name        = "sg-${var.environment}"
   description = "Allow SSH, HTTP, ICMP inbound traffic"
-  vpc_id      = module.network.vpc_id # tham chieu den output
+  vpc_id      = var.vpc_id
 
   ingress {
     description = "SSH from anywhere"
