@@ -27,3 +27,10 @@ variable "owner" {
   description = "Tên chủ sở hữu để gắn tag."
   type        = string
 }
+
+variable "vpc_security_group_ids"   { 
+    type = list(string) 
+}
+variable "associate_public_ip_address" { 
+    type = bool 
+}
