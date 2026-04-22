@@ -1,0 +1,1 @@
+variable "mssv"   { type = string }
